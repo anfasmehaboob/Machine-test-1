@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+.login{
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  width: 48%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 9%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login h2{
+  font-size: 45px;
+  margin: inherit;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login .container{
+  width: 45%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login p{
+  font-size: 20px;
+  font-weight: 700;
+}
+.login p span{
+  color: blue;
+}
+.login form{
+  
   display: flex;
   flex-direction: column;
+}
+.login form input{
+  display: block;
+  border: 2px solid ;
+  padding: 13px;
+  margin-top: 20px;
+  font-size: 23px;
+}
+.login form input::placeholder{
+  color: black;
+  font-weight: 600;
+}
+.login form button{
+  background-color: black;
+  color: #fff;
+  padding: 15px 10px;
+  font-size: 23px;
+  border: none;
+}
+.checkbox_container{
+  display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.checkbox_container input{
+  margin: 3px 5px 0 0  !important;
+}
+.checkbox_container label{
+  font-size: 22px;
+  font-weight: 500;
+}
+.login_with{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    justify-content: center;
+    margin-top: 8%;
+}
+.login_with .one{
+width: 100px;
+background-color: lightslategray;
+height: 3px;
+
+}
+.login_with p{
+  margin: 0 10px;
+  margin-bottom: 5px;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+@media (max-width:991px){
+  .login .container{
+    width: 100%;
+  }
+}
+@media (max-width:991px){
+  .login{
+    width: unset;
+  }
+  .cu_border{
+    width: 100% !important;
+  }
+}
+@media (max-width:402px){
+ .login_with .one{
+   width: 50px;
+ }
+}
+@media (max-width:575px){
+  
+  .datas{
+    padding: 0 10px;
+  }
+ }
+
+
+.cu_border{
+  border: 2px solid;
+  width: 49%;
+}
+.countryname{
+  font-size: 24px;
+  font-weight: 700;
+}
+.country_region{
+  font-size: 18px;
+  font-weight: 500;
+  color: gray;
+}
+.container-fluid{
+  width: 90% !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.footer p{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-weight: 700;
+}
+.custom_width{
+  display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.custom_width p{
+  margin-bottom: 7px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.header h3{
+  font-size: 30px;
+  font-weight: 700;
 }
